@@ -11,12 +11,10 @@ export const GroceryItems = () => {
 
     const clickHandler = (v) => {
         setItems(prevState => [...prevState, `${v}\n`]);
-        console.log(v)
     }
+    
     let toTextArea = items.toString().split(',').join('')
 
-    console.log(toTextArea)
-    console.log(typeof toTextArea)
     return (
         <>
             <div className="groceryContainer" >
