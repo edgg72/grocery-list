@@ -1,16 +1,17 @@
 import React from 'react'
 
-export const GroceryItem = (props) => {
+export const GroceryItem = ({name, clickHandler, className}) => {
     
     return (
         <div className="grocery" >
             <button 
                 type="button"
-                id={props.name}
-                value={props.name}
-                onClick={() => props.clickHandler(props.name)}
+                id={name}
+                value={name}
+                onClick={() => clickHandler(name)}
+                className={className}
             >+</button>
-            <label htmlFor={props.name}>{props.name}</label>
+            <label htmlFor={name}>{name}</label>
         </div>
     )
 }

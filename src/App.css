@@ -43,7 +43,7 @@
   flex-wrap: wrap;
   height: 50vh;
 }
-.grocery{
+.grocery {
   display: flex;
   margin: 5px;
 }
@@ -54,5 +54,24 @@
 }
 
 .grocery label {
-margin: 0 5px;
+  margin: 0 5px;
+}
+
+.buttonStyle {
+  padding: 15px;
+  margin: 15px;
+  border: none;
+  border-radius: 5%;
+}
+
+.addButton {
+  border: none;
+  border-radius: 10%;
+  background-color: rgb(133, 134, 134);
+  color: beige;
+}
+
+.buttonStyle:hover,
+.addButton:hover {
+  background-color: rgb(161, 185, 185);
 }
